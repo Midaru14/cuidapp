@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon mini image in the tab -->
+    <link rel="icon" type="image/x-icon" href="./img/logo-favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Para la fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Enlaza el archivo CSS de Bootstrap desde una CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- import styles and icons -->
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>CuidAPP</title>
+  </head>
+  <body>
+    <!-- start header section -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="./img/logoidea9.png" alt="CuidAPP" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobrecuidapp.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/cuidapp.html">Aplicación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/dispensador.html"
+                  >Dispensador</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  href="./pages/contacto.html"
+                  class="btn btn-outline-secondary"
+                  >Inicia Sesión</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- start home section -->
+    <main>
+      <section class="home" id="home">
+        <div class="home-text">
+          <h6>Tu asistente médico</h6>
+          <h1>Bienvenido a CuidAPP</h1>
+          <p>
+            Cuando comenzamos con un tratamiento médico, puede resultar dificil
+            integrarlo en nuestra vida.
+          </p>
+          <p>
+            CuidAPP es el sistema que te acompañará durante tu tratamiento
+            médico para que comiences a disfrutar tu vida sin preocuparte por
+            medicamentos.
+          </p>
+          <div class="latter">
+            <form>
+              <input type="submit" value="Ver más" required />
+            </form>
+          </div>
+        </div>
+        <div class="home-image">
+          <img src="./img/image-home.png" height="550px" width="auto" />
+        </div>
+      </section>
+      <!-- transition section -->
+      <div class="transition">
+        <div class="contenedor-transicion">
+          <img class="img-fondo" src="./img/fondo-inicio.png" />
+        </div>
+      </div>
+      <!-- slider section -->
+      <div class="container-bottom">
+        <h6>No hay medicamento más efectivo que el que se toma</h6>
+        <h2>La importancia de seguir el tratamiento</h2>
+        <section class="slider">
+          <div class="container-slider"></div>
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="30000">
+                <img
+                  src="./img/slider/slider-1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="30000">
+                <img
+                  src="./img/slider/slider-2.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/slider/slider-3.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/slider/slider-4.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- start footer section -->
+    <footer class="footer-page">
+      <div class="group-1">
+        <!-- box1-->
+        <div class="box">
+          <figu>
+            <a href="#">
+              <img src="./img/logoidea9.png" height="50" alt="Logo CuidAPP" />
+              CuidAPP
+            </a>
+          </figu>
+        </div>
+        <!-- box2-->
+        <div class="box">
+          <p>
+            <small
+              >&copy; 2023 <b>CuidAPP</b> - Todos los derechos Reservados.
+            </small>
+          </p>
+        </div>
+        <!-- box3-->
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="social-media">
+            <a href="#">
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a href="#">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="#">
+              <i class="ri-youtube-fill"></i>
+            </a>
+            <a href="#">
+              <i class="ri-twitter-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- carrusel-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Enlaza el archivo JS de Bootstrap desde una CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
