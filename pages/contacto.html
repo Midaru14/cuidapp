@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon mini image in the tab -->
-    <link rel="icon" type="image/x-icon" href="../img/logo-favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./img/logo-favicon.ico" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -14,7 +14,14 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-       <!-- Enlaza el archivo CSS de Bootstrap desde una CDN -->
+    <!-- Para la fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Enlaza el archivo CSS de Bootstrap desde una CDN -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -26,69 +33,89 @@
   <body>
     <!-- start header section -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-color">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img class="img-fluid" src="../img/logoidea9.png" alt="CuidAPP" />
           </a>
           <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./sobrecuidapp.html">Sobre Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./cuidapp.html">Aplicación</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./dispensador.html">Dispensador</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Inicia Sesión</a>
-            </li>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobrecuidapp.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cuidapp.html">Aplicación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./dispensador.html">Dispensador</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="./contacto.html" class="btn btn-outline-secondary"
+                  >Inicia Sesión</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
     <!-- start main section -->
-    <section class="cuidapp-app">
-      <div class="cuidapp-text">
-        <h3>Bienvenido al sistema de acompañamiento</h3>
-        <h1>Ingresa con tu usuario y Contraseña</h1>
-        <div class="log-in">
-          <form>
-            <div class="form-field">
-              <input type="email" placeholder="Escribe tu usuario" required />
-              <input
-                type="password"
-                placeholder="Ingresa tu contraseña required"
-              />
-            </div>
-            <div class="form-btn">
-              <input type="submit" value="Ingresar" required />
-            </div>
-          </form>
-        </div>
+    <img class="main-login" src="../img/fondo-log-in.png" />
+    <div class="container-login">
+      <div class="img">
+        <img src="../img/mobile-login.gif" />
       </div>
-      <div>
-        <img src="../img/log-in.png" height="400px" />
+      <div class="login-content">
+        <form>
+          <img u />
+          <img src="../img/log-in.png" class="log-in-mini" />
+          <h2 class="title">Bienvenido a CuidAPP</h2>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="div">
+              <h5>Ingresa tu usuario</h5>
+              <input type="text" class="input" />
+            </div>
+          </div>
+          <div class="input-div pass">
+            <div class="i">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="div">
+              <h5>Ingresa tu contraseña</h5>
+              <input type="password" class="input" />
+            </div>
+          </div>
+          <a href="#">Olvidaste tu contraseña?</a>
+          <input type="submit" class="btn" value="Login" />
+        </form>
       </div>
-    </section>
+    </div>
 
     <!-- start footer section -->
     <footer class="footer-page">
@@ -124,7 +151,7 @@
         </div>
       </div>
     </footer>
-        <!-- Enlaza el archivo JS de Bootstrap desde una CDN -->
+    <!-- Enlaza el archivo JS de Bootstrap desde una CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
