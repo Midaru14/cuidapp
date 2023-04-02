@@ -1,0 +1,84 @@
+@import "mixins";
+@import "variables";
+
+/*------------------------------------------------------------------        ABOUT CUIDAPP             ---------------------------------------------------------------------------*/
+
+.bu-container {
+  .bu {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/inicio-sobre-nosotros.png);
+    padding-bottom: 2%;
+    .bu-text {
+      grid-column: 2 / 12;
+    }
+    h1 {
+      font-family: "Anton", sans-serif;
+      font-size: 40px;
+      margin: 5% 5%;
+      color: map-get($colores, white);
+    }
+    p {
+      color: map-get($colores, bg-color);
+      font-size: 25px;
+      margin-top: 48px;
+      font-weight: 190;
+      line-height: 29px;
+      text-align: justify;
+    }
+  }
+
+  /* cards*/
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 100px;
+    .card {
+      width: 30%;
+      background-color: map-get($colores, white);
+      @include sombra(0px, 2px, 4px, rgba(0, 0, 0, 0.15));
+      border-radius: 8px;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease-in-out;
+      align-items: center;
+      img {
+        max-width: 40%;
+        height: auto;
+      }
+      .card-img-top {
+        object-fit: contain;
+        @include dimensiones(auto, 100%);
+      }
+      .card-body {
+        padding: 1rem;
+        .card-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+        .card-text {
+          font-size: 1.2rem;
+          line-height: 1.5;
+          margin-bottom: 1.5rem;
+        }
+        .btn {
+          background-color: map-get($colores, blue);
+          border: none;
+          border-radius: 4px;
+          padding: 0.5rem 1rem;
+          font-size: 1.2rem;
+          color: #fff;
+          .btn:hover {
+            background-color: map-get($colores, blue);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@mixin dimensiones($ancho, $alto) {
+  width: $ancho;
+  height: $alto;
+}
+
+@mixin sombra($desplazamiento-x, $desplazamiento-y, $desenfoque, $difuminado) {
+  box-shadow: $desplazamiento-x $desplazamiento-y $desenfoque $difuminado;
+}

@@ -1,0 +1,113 @@
+@import "mixins";
+@import "variables";
+
+/*-------------------------------------------------------------------------       APLICACION CUIDAPP           ---------------------------------------------------------------------------*/
+
+.cuidapp-container {
+  /*      Banner section    */
+  .cuidapp-app {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 0% 0%;
+    margin-bottom: 5em;
+    .cuidapp-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+    .cuidapp-image img {
+      @include dimensiones(100%, auto);
+    }
+    h1 {
+      font-size: 40px;
+      font-family: "Anton", sans-serif;
+      color: map-get($colores, bg-color);
+    }
+    h3 {
+      color: var(--strong-color);
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-indent: 5px;
+    }
+    p {
+      color: map-get($colores, bg-color);
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      color: $big-font;
+      text-indent: 5px;
+    }
+    .btn-app form {
+      width: 50%;
+      position: relative;
+    }
+
+    .btn-app form :first-child {
+      position: absolute;
+      display: inline-block;
+      border: none;
+      outline: none;
+      background: map-get($colores, main-color);
+      color: map-get($colores, bg-color);
+      padding: 16px 40px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
+  /*cuidapp app - app-functions --------------*/
+
+  .functions-app {
+    .center-text {
+      text-align: center;
+      margin-top: 0px;
+      h5 {
+        color: map-get($colores, strong-color);
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+      }
+      h2 {
+        font-size: 29px;
+        line-height: 1.2;
+        font-weight: 600px;
+      }
+    }
+    .functions-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+      gap: 1.5rem;
+      align-items: center;
+      cursor: pointer;
+      text-align: center;
+      margin-top: 3rem;
+      .box {
+        margin-bottom: 30px;
+        img {
+          @include dimensiones(240px, auto);
+          margin-bottom: 10px;
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          line-height: 1.3;
+          transition: all 0.4s ease;
+        }
+        h3:hover {
+          color: var(--main-color);
+        }
+        p {
+          font-size: $p-size;
+          color: $big-font;
+          font-weight: 100;
+        }
+      }
+      .box:hover {
+        transform: translateY(-15px);
+      }
+    }
+  }
+}

@@ -27,7 +27,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
     />
     <!-- import styles and icons -->
-    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../sass/main.css" rel="stylesheet" />
     <title>CuidAPP</title>
   </head>
   <body>
@@ -82,60 +82,67 @@
         </div>
       </nav>
     </header>
-    <!-- start main section -->
-    <section class="cuidapp-app">
-      <div class="cuidapp-image">
-        <img src="../img/aplication-banner.png" height="400px" />
-      </div>
-      <div class="cuidapp-text">
-        <h3>Programá tu tratamiento médico</h3>
-        <h1>Conocé más acerca de nuestra aplicación CuidAPP</h1>
-        <p>
-          Olvidate de anotadores, pastilleros manuales y recordatorios
-          individuales
-        </p>
-        <div class="btn-app">
-          <form>
-            <input type="submit" value="Descargar ahora" />
-          </form>
+    <main class="cuidapp-container">
+      <!-- start main section -->
+      <section class="cuidapp-app">
+        <div class="cuidapp-image">
+          <img src="../img/aplication-banner.png" height="400px" />
         </div>
-      </div>
-    </section>
+        <div class="cuidapp-text">
+          <h3>Programá tu tratamiento médico</h3>
+          <h1>Conocé más acerca de nuestra aplicación CuidAPP</h1>
+          <p>
+            Olvidate de anotadores, pastilleros manuales y recordatorios
+            individuales
+          </p>
+          <div class="btn-app">
+            <form
+              action="https://play.google.com/store/apps"
+              method="get"
+              target="_blank"
+            >
+              <input type="submit" value="Descargar ahora" />
+            </form>
+          </div>
+        </div>
+      </section>
 
-    <!-- start categories section -->
-    <section class="functions-app" id="functions-app">
-      <div class="center-text">
-        <h5>Sobre nuestra App</h5>
-        <h2>FUNCIONALIDADES</h2>
-      </div>
-
-      <div class="functions-content">
-        <div class="box">
-          <img src="../img/app-functions/functions-1.png" />
-          <h3>Programa recordatorios</h3>
-          <p>Para poder seguir tu tratamiento de manera adecuada</p>
+      <!-- start categories section -->
+      <section class="functions-app" id="functions-app">
+        <div class="center-text">
+          <h5>Sobre nuestra App</h5>
+          <h2>FUNCIONALIDADES</h2>
         </div>
 
-        <div class="box">
-          <img src="../img/app-functions/functions-2.png" />
-          <h3>Registra medicamentos e indicaciones</h3>
-          <p>Para realizar un seguimiento y control sobre los mismos</p>
-        </div>
+        <div class="functions-content">
+          <div class="box">
+            <img src="../img/app-functions/functions-1.png" />
+            <h3>Programa recordatorios</h3>
+            <p>Para poder seguir tu tratamiento de manera adecuada</p>
+          </div>
 
-        <div class="box">
-          <img src="../img/app-functions/functions-3.png" />
-          <h3>Consulta tus avances</h3>
-          <p>Para conocer qué tan bien lo estás haciendo y si puedes mejorar</p>
-        </div>
+          <div class="box">
+            <img src="../img/app-functions/functions-2.png" />
+            <h3>Registra medicamentos e indicaciones</h3>
+            <p>Para realizar un seguimiento y control sobre los mismos</p>
+          </div>
 
-        <div class="box">
-          <img src="../img/app-functions/functions-4.png" />
-          <h3>Compártelo con tu familia y médico de confianza</h3>
-          <p>Ellos podrán brindarte el soporte y acompañarte en el proceso</p>
-        </div>
-      </div>
-    </section>
+          <div class="box">
+            <img src="../img/app-functions/functions-3.png" />
+            <h3>Consulta tus avances</h3>
+            <p>
+              Para conocer qué tan bien lo estás haciendo y si puedes mejorar
+            </p>
+          </div>
 
+          <div class="box">
+            <img src="../img/app-functions/functions-4.png" />
+            <h3>Compártelo con tu familia y médico de confianza</h3>
+            <p>Ellos podrán brindarte el soporte y acompañarte en el proceso</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- footer starts here-->
     <footer class="footer-page">
       <div class="group-1">
