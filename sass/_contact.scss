@@ -55,12 +55,10 @@
       .log-in-mini {
         display: none;
       }
-      h2 {
-        color: var(--);
-        font-size: 29px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin-bottom: 29px;
+      h1 {
+        font-family: "Anton", sans-serif;
+        font-size: 40px;
+        color: map-get($colores, title-color);
       }
       .input-div {
         position: relative;

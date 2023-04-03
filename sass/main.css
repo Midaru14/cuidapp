@@ -455,12 +455,10 @@ section {
 .login-container .container-login .log-fields .log-in-mini {
   display: none;
 }
-.login-container .container-login .log-fields h2 {
-  color: var(--);
-  font-size: 29px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 29px;
+.login-container .container-login .log-fields h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  color: #292929;
 }
 .login-container .container-login .log-fields .input-div {
   position: relative;
