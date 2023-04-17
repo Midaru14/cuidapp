@@ -6,10 +6,11 @@ section {
 }
 
 .home-container {
+  background: linear-gradient(to bottom, #fff, #fff, #fff, #fff, #fff, #c8c2d9);
   /*slider section*/
 }
 .home-container .home {
-  height: 860px;
+  height: 840px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -95,6 +96,52 @@ section {
   margin-bottom: 60px;
   position: relative;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+.home-container .container-faq {
+  padding: 50px 10px;
+  text-align: center;
+}
+.home-container .container-faq .faq-section__title {
+  color: #292929;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.home-container .container-faq .faq-section__subtitle {
+  color: #292929;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.home-container .container-faq .accordion {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.home-container .container-faq .accordion-header {
+  background-color: #fff;
+  color: #0074d9;
+  font-weight: bold;
+  font-size: 24px;
+  border: none;
+  border-radius: 0;
+  padding: 10px;
+  margin-bottom: 1px;
+}
+.home-container .container-faq .accordion-header:hover {
+  background-color: #f9f9f9;
+}
+.home-container .container-faq .accordion-header:focus {
+  outline: none;
+  box-shadow: none;
+}
+.home-container .container-faq .accordion-body {
+  background-color: #f9f9f9;
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+  text-align: left;
+}
+.home-container .container-faq .accordion-flush {
+  border-top: none;
 }
 
 /* mapa de colores*/
@@ -600,7 +647,8 @@ header .container-fluid span {
 /*                   HOME RESPONSIVE                     */
 @media (max-width: 768px) {
   .home-container {
-    height: 1560px;
+    height: 2500px;
+    background: linear-gradient(to bottom, #fff, #fff, #c8c2d9);
   }
   .home-container .home {
     height: 960px;
@@ -630,7 +678,8 @@ header .container-fluid span {
     height: 100%;
   }
   .home-container .container-bottom {
-    height: 560px;
+    height: 460px;
+    margin-top: 20px;
   }
   .home-container .container-bottom h6 {
     font-size: 18px;
@@ -651,6 +700,60 @@ header .container-fluid span {
   .home-container .container-bottom .slider .carrousel img {
     max-width: 100%; /* asegura que las imágenes no excedan el ancho del contenedor */
     height: 100%;
+  }
+  .home-container .container-faq {
+    padding: 50px 0px;
+    text-align: center;
+  }
+  .home-container .container-faq .faq-section__title {
+    font-size: 30px;
+  }
+  .home-container .container-faq .faq-section__subtitle {
+    color: #292929;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  .home-container .container-faq .accordion {
+    max-width: 1400px;
+  }
+  .home-container .container-faq .accordion-header {
+    background-color: #fff;
+    color: #0074d9;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    margin-bottom: 1px;
+  }
+  .home-container .container-faq .accordion-header:hover {
+    background-color: #f9f9f9;
+  }
+  .home-container .container-faq .accordion-header:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .home-container .container-faq .accordion-body {
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+  }
+  .home-container .container-faq .accordion-flush {
+    border-top: none;
+  }
+  .home-container .faq-section__title {
+    font-size: 28px;
+  }
+  .home-container .faq-section__subtitle {
+    font-size: 16px;
+  }
+  .home-container .accordion-header {
+    font-size: 20px;
+  }
+  .home-container .accordion-body {
+    font-size: 16px;
   }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
