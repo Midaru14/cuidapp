@@ -8,8 +8,17 @@ section {
 }
 
 .home-container {
+  background: linear-gradient(
+    to bottom,
+    map-get($colores, white),
+    map-get($colores, white),
+    map-get($colores, white),
+    map-get($colores, white),
+    map-get($colores, white),
+    map-get($colores, light-color)
+  );
   .home {
-    height: 860px;
+    height: 840px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -98,6 +107,60 @@ section {
         margin-bottom: 60px;
         position: relative;
         @include sombra(0px, 0px, 20px, rgba(0, 0, 0, 0.4));
+      }
+    }
+  }
+  .container-faq {
+    padding: 50px 10px;
+    text-align: center;
+
+    .faq-section__title {
+      color: map-get($colores, title-color);
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .faq-section__subtitle {
+      color: map-get($colores, title-color);
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+
+    .accordion {
+      max-width: 1300px;
+      margin: 0 auto;
+
+      &-header {
+        background-color: #fff;
+        color: #0074d9;
+        font-weight: bold;
+        font-size: 24px;
+        border: none;
+        border-radius: 0;
+        padding: 10px;
+        margin-bottom: 1px;
+
+        &:hover {
+          background-color: #f9f9f9;
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+
+      &-body {
+        background-color: #f9f9f9;
+        padding: 20px;
+        font-size: 18px;
+        color: #333;
+        text-align: left;
+      }
+
+      &-flush {
+        border-top: none;
       }
     }
   }
