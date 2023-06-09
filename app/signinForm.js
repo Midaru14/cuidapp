@@ -2,9 +2,9 @@ import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9
 import { auth } from "./firebase.js";
 import { showMessage } from "./showMessage.js";
 
-const signInForm = document.querySelector("#login-form");
 // Obtener referencia al botón de inicio de sesión
 const loginButton = document.querySelector("#login-button");
+console.log("login esperando");
 
 loginButton.addEventListener("click", async (e) => {
   e.preventDefault();
@@ -18,11 +18,8 @@ loginButton.addEventListener("click", async (e) => {
       email,
       password
     );
-    console.log("2");
-    console.log(userCredentials);
-
     // reset the form
-    signInForm.reset();
+    //signInForm.reset();
 
     // show welcome message
     showMessage("Welcome " + userCredentials.user.email);
@@ -35,6 +32,7 @@ loginButton.addEventListener("click", async (e) => {
       showMessage("User not found", "error");
     } else {
       showMessage("Something went wrong", "error");
+      console.log(error);
     }
   }
 });

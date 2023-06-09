@@ -79,12 +79,14 @@
               </li>
             </ul>
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  href="../index.html"
-                  class="btn btn-outline-secondary"
-                  id="#logout"
-                  >Cerrar sesión</a
+              <li class="nav-item" id="#logout-btn">
+                <a class="btn btn-outline-secondary"
+                  ><button
+                    id="logout"
+                    style="background: transparent; border: none"
+                  >
+                    Cerrar Sesión
+                  </button></a
                 >
               </li>
             </ul>
@@ -165,7 +167,7 @@
         </div>
         <div class="content-data">
           <div class="head">
-            <h3>Notas</h3>
+            <h3>Medicamentos</h3>
             <div class="menu">
               <i class="bx bx-dots-horizontal-rounded icon"></i>
               <ul class="menu-link">
@@ -175,7 +177,7 @@
               </ul>
             </div>
           </div>
-          <div class="chat-box">
+          <!-- <div class="chat-box">
             <p class="day"><span>Today</span></p>
             <div class="msg">
               <img
@@ -221,15 +223,16 @@
                 <p>Lorem ipsum, dolor sit amet.</p>
               </div>
             </div>
-          </div>
-          <form action="#">
+          </div> -->
+          <ul class="medicamentos-list medicamentos"></ul>
+          <!--<form action="#">
             <div class="form-group">
               <input type="text" placeholder="Type..." />
               <button type="submit" class="btn-send">
                 <i class="bx bxs-send"></i>
               </button>
             </div>
-          </form>
+          </form>-->
         </div>
       </div>
     </main>
@@ -273,5 +276,7 @@
     </footer>
     <!-- Enlaza el archivo JS de Bootstrap desde una CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <!--import main-->
+    <script src="../main.js" type="module"></script>
   </body>
 </html>

@@ -3,6 +3,7 @@ const loggedInLinks = document.querySelectorAll(".logged-in");
 
 export const loginCheck = (user) => {
   if (user) {
+    console.log("check usuario si");
     loggedInLinks.forEach((link) => (link.style.display = "block"));
     loggedOutLinks.forEach((link) => (link.style.display = "none"));
   } else {
