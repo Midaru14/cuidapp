@@ -1,24 +1,30 @@
 const MedList = document.querySelector(".medicamentos");
+const MedMens = document.querySelector(".lbl-me-mensaje");
 
-export const setupMeds = (data) => {
-  if (data.length) {
+export const setupMeds = (datamed) => {
+  console.log(datamed);
+  if (datamed.length > 0) {
     let html = "";
-    data.forEach((doc) => {
+    datamed.forEach((doc) => {
       const medi = doc;
       const li = `
-      <li class="medicamento-item">
-        <h5>${medi.nombreMedicamento}</h5>
-        <p>Descripción: ${medi.descripcionMedicamento}</p>
-        <p>Presentación: ${medi.presentacionMedicamento}</p>
-        <p>Unidad de Medida: ${medi.unidadMedidaMedicamento}</p>
-      </li>
+      <tr>
+        <td>${medi.nombreMedicamento}</td>
+        <td>${medi.descripcionMedicamento}</td>
+        <td>${medi.presentacionMedicamento}</td>
+        <td>${medi.unidadMedidaMedicamento}</td>
+        <td>${medi.fechaVencimientoISO8601}</td>
+        <td>${medi.stock}</td>
+      </tr>
     `;
       html += li;
     });
     MedList.innerHTML = html;
+    MedMens.innerHTML = " <p>Los medicamentos registrados en CuidAPP son:</p>";
   } else {
-    MedList.innerHTML =
-      '<h4 class="text-white">No se encontraron medicamentos</h4>';
+    console.log("no datos");
+    MedList.innerHTML = "";
+    MedMens.innerHTML =
+      " <p>No hay medicamentos registrados para el usuario</p>";
   }
 };
-

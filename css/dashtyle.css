@@ -168,32 +168,52 @@ main .info-data {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 20px;
 }
-main .info-data .card {
+
+main .info-data .cards-up {
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   background: #fff;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.05);
 }
-main .card .head {
+
+main .info-data .cards-up.chart {
+  grid-column: span 2;
+}
+
+.card-content table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.card-content table th,
+.card-content table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .cards-up .head {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-main .card .head h2 {
+main .card-up .head h3 {
   font-size: 24px;
   font-weight: 600;
 }
-main .card .head p {
-  font-size: 14px;
+main .cards-up p {
+  font-size: 16px;
+  padding: 0px;
+  margin: 16px ;
 }
-main .card .head .icon {
-  font-size: 20px;
+main .cards-up .head .icon {
+  font-size: 40px;
   color: #81d43a;
 }
-main .card .head .icon.down {
+main .cards-up .head .icon.down {
   color: fc3b56;
 }
-main .card .progress {
+main .cards-up .progress {
   display: block;
   margin-top: 24px;
   height: 10px;
@@ -204,7 +224,7 @@ main .card .progress {
   position: relative;
   margin-bottom: 4px;
 }
-main .card .progress::before {
+main .cards-up .progress::before {
   content: "";
   position: absolute;
   top: 0;
@@ -213,24 +233,41 @@ main .card .progress::before {
   background: #1775f1;
   width: var(--value);
 }
-main .card .label {
+main .cards-up .label {
   font-size: 14px;
   font-weight: 700;
 }
 main .data {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
   margin-top: 20px;
-  flex-wrap: wrap;
+  padding: 0px;
+  /*
+  display: flex;
+  padding: 0px;
+  flex-direction: row;
+  grid-gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;*/
 }
+.row-cols-auto {
+  margin: 0px;
+  padding: 0px;
+  flex: 1;
+}
+
 main .data .content-data {
-  flex-grow: 1;
-  flex-basis: 400px;
-  padding: 20px;
+  padding: 0px;
+  background: var(--light);
+  border-radius: 10px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  /*padding: 0px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);*/
 }
 main .content-data .head {
   display: flex;
@@ -337,7 +374,7 @@ main .chat-box .chat p {
   font-size: 14px;
   padding: 6px 10px;
   display: inline-block;
-  max-width: 400px;
+  max-width: 600px;
   line-height: 150%;
 }
 main .chat-box .msg:not(.me) .chat p {
@@ -345,9 +382,7 @@ main .chat-box .msg:not(.me) .chat p {
   background: #1775f1;
   color: #fff;
 }
-main .chat-box .msg.me {
-  justify-content: flex-end;
-}
+
 main .chat-box .msg.me .profile {
   text-align: right;
 }
@@ -798,15 +833,8 @@ main .card .label {
   font-size: 14px;
   font-weight: 700;
 }
-main .data {
-  display: flex;
-  grid-gap: 20px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
+
 main .data .content-data {
-  flex-grow: 1;
-  flex-basis: 400px;
   padding: 20px;
   background: var(--light);
   border-radius: 10px;
@@ -924,9 +952,6 @@ main .chat-box .msg:not(.me) .chat p {
   border-radius: 0 5px 5px 5px;
   background: var(--blue);
   color: var(--light);
-}
-main .chat-box .msg.me {
-  justify-content: flex-end;
 }
 main .chat-box .msg.me .profile {
   text-align: right;
