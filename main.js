@@ -54,7 +54,9 @@ onAuthStateChanged(auth, async (user) => {
           seutupAnot(usuarioAnotac);
           // Aquí puedes hacer lo que necesites con los datos de los medicamentos del usuario
         } else {
-          console.log("No hay datos de usuario");
+          console.log("No hay anotaciones de usuario");
+          const MedMens = document.querySelector(".lbl-anot-mensaje");
+          MedMens.innerHTML = " <p>No hay anotaciones registradas</p>";
         }
       });
     } catch {
@@ -95,7 +97,7 @@ onAuthStateChanged(auth, async (user) => {
           // Aquí puedes hacer lo que necesites con los datos de los medicamentos del usuario
         } else {
           console.log("no existe snap de indicaciones");
-          const MesAnot = document.querySelector(".lbl-anot-mensaje");
+          const MesAnot = document.querySelector(".lbl-ind-mensaje");
           MesAnot.innerHTML = " <p>No hay anotaciones registradas</p>";
         }
       });
